@@ -1,4 +1,6 @@
-//
-// Created by Alexey on 06.10.2020.
-//
+#include "task5.h"
 
+int main () {
+
+	return 0;
+}

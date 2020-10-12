@@ -3,7 +3,7 @@
 unsigned long NOD (unsigned long a, unsigned long b) {
 
 	while ( a && b ) {
-		if (a >= b)
+		if ( a >= b )
 			a = a % b;
 		else
 			b = b % a;
