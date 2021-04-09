@@ -46,7 +46,10 @@ jobs:
       - name: Download artifact
         uses: aochmann/actions-download-artifact@1.0.0
         with:
-          name: task.exe
+          name: my-artifact
+          
+      - name: test
+        run: ls
 
       - name: send telegram message
         uses: appleboy/telegram-action@master
