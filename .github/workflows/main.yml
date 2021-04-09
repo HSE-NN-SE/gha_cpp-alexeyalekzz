@@ -47,10 +47,14 @@ jobs:
 #         uses: aochmann/actions-download-artifact@1.0.0
 #         with:
 #           name: my-artifact
-      - name: Download artifact from build
-        uses: bettermarks/action-artifact-download@0.1.0
+#       - name: Download artifact from build
+#         uses: bettermarks/action-artifact-download@0.1.0
+#         with:
+#           artifact_name: my-artifact
+      - name: Download artifact
+        uses: actions/download-artifact@v2
         with:
-          artifact_name: my-artifact
+          name: my-artifact  
                 
       - name: test
         run: ls
