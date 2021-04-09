@@ -27,7 +27,7 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       
       - name: Build
-        run: cl /EHsc src/main1.cpp src/task1.cpp
+        run: cl /EHsc src/main1.cpp src/task1.cpp /link /out:task.exe
         
       - name: 'Upload artifact'
         uses: actions/upload-artifact@v2
