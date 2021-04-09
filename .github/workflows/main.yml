@@ -51,8 +51,7 @@ jobs:
         uses: bettermarks/action-artifact-download@0.1.0
         with:
           artifact_name: my-artifact
-          rename: task   
-        
+                
       - name: test
         run: ls
 
