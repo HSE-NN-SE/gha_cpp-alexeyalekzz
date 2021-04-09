@@ -30,8 +30,9 @@ jobs:
         
       - name: Make
         run: |
-          ls
           cd build
+          ls
+          cd cmakefiles
           ls
         
       - name: 'Upload artifact'
