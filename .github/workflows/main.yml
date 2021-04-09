@@ -29,7 +29,10 @@ jobs:
         run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
         
       - name: Make
-        run: cd build && make
+        run: |
+          ls
+          cd build
+          make
         
       - name: 'Upload artifact'
         uses: actions/upload-artifact@v2
