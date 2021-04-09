@@ -36,6 +36,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: my-artifact
-          path: ".exe"
+          path: task.exe
           retention-days: 1
           
