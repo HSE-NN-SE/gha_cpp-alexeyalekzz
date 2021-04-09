@@ -8,7 +8,8 @@
 #include "../include/Postfix.h"
 
 int main() {
-  std::string infix("4 + 3 / 14 * (2 - 7) / (3 * (33 - 26)) / 41");
+  std::string infix;
+  std::cin >> infix;
 
   std::cout << "Infix expression:   " << infix << std::endl
             << "Postfix expression: " << infix2postfix(infix) << std::endl;
