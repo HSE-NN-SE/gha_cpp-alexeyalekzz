@@ -25,18 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Configure
-        run: |
-          mkdir build 
-          cd build
-          cmake ..
-        
-      - name: Make
-        run: |
-          cd build
-          ls
-          cd cmakefiles
-          ls -R
+      - name: Build
+        run: cl /EHsc src/main1.cpp src/task1.cpp include/task1.h
         
       - name: 'Upload artifact'
         uses: actions/upload-artifact@v2
